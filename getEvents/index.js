@@ -5,7 +5,7 @@ module.exports = async function (context, req) {
 
     let count = req.query.count ? req.query.count : 10
 
-    if (count > 20) count = 20;
+    if (count > 20) count = 20; //max 20 events
 
     context.log('Building event ... ');
 
